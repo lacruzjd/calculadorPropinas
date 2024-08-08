@@ -1,0 +1,160 @@
+*{
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(8, 5, 5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#totalpropina,
+#cabezas,
+#descuentos, div {
+    margin: 10px;
+    background-color: rgb(61, 93, 154);
+    text-align: center;
+}
+
+#totalpropina input {
+    border: none;
+    font-size: 1em;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#totalbody div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#totalbody div label {
+    color: rgb(242, 249, 254);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#totalbody div input {
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 79, 79);
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: rgb(5, 5, 11);
+}
+
+#cabezas {
+    padding: 40px;
+}
+
+#cabezas input {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#cabezasbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cabezasbody div {
+    color: aliceblue;
+    font-size: large;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(15, 38, 169);
+}
+
+#cabezasbody label {
+    color: rgb(179, 209, 236);
+    font-size: large;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(15, 38, 169);
+}
+
+#descuentosbody {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+
+#descuentosbody div {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: beige;
+    margin: 10px;
+    justify-content: center;
+}
+
+#descuentosbody div h2 {
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+}
+
+#descuentos>input {
+    padding: 20px;
+}
+
+#descuentosbody div div {
+    display: flex;
+}
+#descuentosbody div div input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+#descuentosbody div div:nth-child(2){
+    display: none;
+}
+
+#descuentosbody div div:last-child input{
+    color: red;
+    width: 100px;
+    font-size: 20px;
+}
+
+#descuentosbody div div:nth-child(4) input{
+    width: 100px;
+    font-size: 20px;
+}
+
+#descuentosbody div div:last-child label{
+    width: 100px;
+    font-size: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(160, 23, 23, 0.15);
+}
+
+thead tr {
+    background-color: rgb(61, 93, 154);
+    color: #ffffff;
+    text-align: left;
+}
+tbody tr {
+    background-color: beige;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+}
