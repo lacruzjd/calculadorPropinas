@@ -82,7 +82,7 @@ totalnodo.onsubmit = (e) => {
 
         formDescuentos.onsubmit = (e) => {
             e.preventDefault()
-            if(document.body.childElementCount > 4){
+            if(document.body.childElementCount > 3){
                 document.body.lastChild.remove()
             }
 
