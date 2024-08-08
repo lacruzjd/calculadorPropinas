@@ -1,5 +1,9 @@
+//Programa para calcular propinas
+
+//integrantes
 const cabezasName = ['Carlos', 'viejo', 'lalo', 'David', 'Nacho', 'flaco', 'Juan', 'JuanCarlos', "Rony"]
 
+//crea el objeto cabeza a partir del array de cabezasName
 const cabezaObj = cabezasName.map(cabeza => { return { cabeza: cabeza } })
 
 let totalPropinasRecibidas = 0
@@ -16,7 +20,7 @@ document.body.appendChild(crearFormularioConSubmitYDiv('totalpropina', 'totalbod
 const totalnodo = document.querySelector('#totalpropina')
 
 const bodyTotal = totalnodo.querySelector('#totalbody')
-bodyTotal.appendChild(crearInputConLabel('number', 'totalpropina', 0, 'Tota Propina', false))
+bodyTotal.appendChild(crearInputConLabel('number', 'totalpropina', 0, 'Total Propinas', false))
 
 totalnodo.onsubmit = (e) => {
     e.preventDefault()
@@ -112,13 +116,8 @@ totalnodo.onsubmit = (e) => {
             })
 
             document.body.appendChild(crearTabla(totales))
-
-
         }
-
     }
-
-
 }
 
 const setPropina = (cabezaObj, totalPropinasRecibidas) => {
@@ -142,7 +141,6 @@ const setDescuentos = (setPropinas, descuentos) => {
                     descuentosTotal = Math.floor(descuentosTotal + propina.total - (propinaPorDia * descuento.dias))
                     propina.total = Math.floor(propinaPorDia * descuento.dias)
                 }
-
                 //pago por dia y descuento por adelanto
                 if (descuento.dias < 7 && descuento.adelanto > 0) {
                     descuentosTotal = Math.floor(descuentosTotal + propina.total - (propinaPorDia * descuento.dias))
@@ -150,7 +148,6 @@ const setDescuentos = (setPropinas, descuentos) => {
                     propina.total = Math.floor(propinaPorDia * descuento.dias)
                     propina.total = Math.floor(propina.total - descuento.adelanto)
                 }
-
 
             } else {
                 return propina
@@ -308,9 +305,3 @@ function crearTabla(datos) {
 
     return tabla;
 }
-
-
-
-
-
-
