@@ -112,7 +112,6 @@ totalnodo.onsubmit = (e) => {
             })
 
             document.body.appendChild(crearTabla(totales))
-            console.log(cabezaObj)
 
 
         }
@@ -137,13 +136,11 @@ const setDescuentos = (setPropinas, descuentos) => {
                 if (descuento.adelanto > 0 && descuento.dias === 7) {
                     propina.total = Math.floor(propina.total - descuento.adelanto)
                     descuentosTotal = Math.floor(descuentosTotal + descuento.adelanto)
-                    // console.log(propina)
                 }
                 //solo pago dias trabajados
                 if (descuento.dias < 7 && descuento.adelanto === 0) {
                     descuentosTotal = Math.floor(descuentosTotal + propina.total - (propinaPorDia * descuento.dias))
                     propina.total = Math.floor(propinaPorDia * descuento.dias)
-                    // console.log(propina)
                 }
 
                 //pago por dia y descuento por adelanto
@@ -152,7 +149,6 @@ const setDescuentos = (setPropinas, descuentos) => {
                     descuentosTotal = Math.floor(descuentosTotal + descuento.adelanto)
                     propina.total = Math.floor(propinaPorDia * descuento.dias)
                     propina.total = Math.floor(propina.total - descuento.adelanto)
-                    // console.log(propina)
                 }
 
 
@@ -312,17 +308,6 @@ function crearTabla(datos) {
 
     return tabla;
 }
-
-// console.log(setPropina(cabezaObj, totalPropinasRecibidas))
-// console.log(setDescuentos(cabezaObj, descuentos))
-// console.log(setRestos(setDescuentos(cabezaObj, descuentos)))
-// console.log(redondearToCien(setRestos(setDescuentos(cabezaObj, descuentos))))
-// console.log(`total propina recibida: ${ totalPropinasRecibidas }`)
-// console.log(`propina por dia: ${ propinaPorDia }`)
-// console.log(`descuentos Total: ${ descuentosTotal }`)
-// console.log(`propina Entregada: ${ propinaEntregada - restos}`)
-// console.log(`restos: ${ restos } `)
-// console.log(`total Entregado: ${ totalEntregado } `)
 
 
 
