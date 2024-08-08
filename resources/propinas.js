@@ -108,10 +108,10 @@ totalnodo.onsubmit = (e) => {
                 descuentos.push(objetoGrupo);
             }
 
-            setDescuentos(cabezaObj, descuentos)
-            setRestos(cabezaObj)
-            redondearToCien(cabezaObj)
-            const totales = cabezaObj.map(e => {
+            const totalDescuentos = setDescuentos(cabezaObj, descuentos)
+            setRestos(totalDescuentos)
+            redondearToCien(totalDescuentos)
+            const totales = totalDescuentos.map(e => {
                 return {cabeza: e.cabeza, total: e.total}
             })
 
