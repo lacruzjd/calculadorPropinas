@@ -157,7 +157,7 @@ const setDescuentos = (setPropinas, descuentos) => {
         return propina
     })
 }
-
+/*
 const setRestos = (resultadoDescuentos) => {
     propinaEntregada = propinaEntregada + descuentosTotal;
     const restosCadaUno = resultadoDescuentos.filter(e => e.total === propinaPorCabeza).length
@@ -170,6 +170,7 @@ const setRestos = (resultadoDescuentos) => {
         return cabeza
     })
 }
+*/
 
 let totalEntregado = 0
 const redondearToCien = (arr = []) => {
