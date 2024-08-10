@@ -185,13 +185,13 @@ const redondearToCien = (arr = []) => {
     })
 
 }
-
+/*
 function redondearYRestante(numero) {
     let redondeado = Math.floor(numero / 100) * 100;
     let restante = numero % 100;
     return { redondeado, restante };
 }
-
+*/
 // inferfaz
 
 function crearFormularioConSubmitYDiv(idFormulario, idDiv, buttonName) {
