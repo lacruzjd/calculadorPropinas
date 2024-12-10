@@ -8,12 +8,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+form{
+    margin: 10px;
 }
 
 #totalpropina,
 #cabezas,
 #descuentos, div {
-    margin: 10px;
     background-color: rgb(61, 93, 154);
     text-align: center;
 }
@@ -49,7 +53,8 @@ body {
 }
 
 #cabezas {
-    padding: 40px;
+    padding: 10px;
+
 }
 
 #cabezas input {
