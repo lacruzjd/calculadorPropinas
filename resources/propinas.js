@@ -1,7 +1,7 @@
 //Programa para calcular propinas
 
 //integrantes
-const cabezasName = ['Carlos', 'viejo', 'gordito', 'David', 'Nacho', 'flaco', 'Juan', 'JuanCarlos',"juaquin", "xixo"]
+const cabezasName = ['Carlos', 'viejo', 'David', 'Nacho', 'flaco', 'Juan', 'JuanCarlos',"juaquin", "Alejandro", "Alberto"]
 
 //crea el objeto cabeza a partir del array de cabezasName
 const cabezaObj = cabezasName.map(cabeza => { return { cabeza: cabeza } })
